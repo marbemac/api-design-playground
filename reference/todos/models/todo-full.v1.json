@@ -13,10 +13,7 @@
           "maximum": 1000000
         },
         "completed_at": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": "string",
           "format": "date-time"
         },
         "created_at": {
@@ -31,13 +28,8 @@
           "$ref": "./user.v1.json"
         }
       },
-      "required": [
-        "id",
-        "user"
-      ]
+      "required": ["id", "user"]
     }
   ],
-  "x-tags": [
-    "Todos"
-  ]
+  "x-tags": ["Todos"]
 }

@@ -6,17 +6,9 @@
       "type": "string"
     },
     "completed": {
-      "type": [
-        "boolean",
-        "null"
-      ]
+      "type": "boolean"
     }
   },
-  "required": [
-    "name",
-    "completed"
-  ],
-  "x-tags": [
-    "Todos"
-  ]
+  "required": ["name", "completed"],
+  "x-tags": ["Todos"]
 }
