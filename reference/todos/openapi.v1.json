@@ -3,7 +3,7 @@
   "info": {
     "title": "To-dos",
     "version": "1.0",
-    "description": "This OpenAPI v2 (Swagger) file represents a real API that lives at http://todos.stoplight.io.\n\nIt exposes functionality to manage to-do lists.",
+    "description": "This OpenAPI v2 file represents a real API that lives at http://todos.stoplight.io.\n\nIt exposes functionality to manage to-do lists.",
     "contact": {
       "name": "Stoplight",
       "url": "https://stoplight.io"
@@ -13,16 +13,9 @@
     }
   },
   "host": "todos.stoplight.io",
-  "schemes": [
-    "https",
-    "http"
-  ],
-  "consumes": [
-    "application/json"
-  ],
-  "produces": [
-    "application/json"
-  ],
+  "schemes": ["https", "http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
   "securityDefinitions": {
     "apikey": {
       "name": "apikey",
@@ -49,9 +42,7 @@
       "get": {
         "operationId": "GET_todo",
         "summary": "Get Todo",
-        "tags": [
-          "Todos"
-        ],
+        "tags": ["Todos"],
         "responses": {
           "200": {
             "description": "",
@@ -80,9 +71,7 @@
       "put": {
         "operationId": "PUT_todos",
         "summary": "Update Todo",
-        "tags": [
-          "Todos"
-        ],
+        "tags": ["Todos"],
         "parameters": [
           {
             "name": "body",
@@ -132,9 +121,7 @@
       "delete": {
         "operationId": "DELETE_todo",
         "summary": "Delete Todo",
-        "tags": [
-          "Todos"
-        ],
+        "tags": ["Todos"],
         "responses": {
           "204": {
             "description": ""
@@ -160,9 +147,7 @@
       "post": {
         "operationId": "POST_todos",
         "summary": "Create Todo",
-        "tags": [
-          "Todos"
-        ],
+        "tags": ["Todos"],
         "parameters": [
           {
             "name": "body",
@@ -210,9 +195,7 @@
       "get": {
         "operationId": "GET_todos",
         "summary": "List Todos",
-        "tags": [
-          "Todos"
-        ],
+        "tags": ["Todos"],
         "parameters": [
           {
             "$ref": "../common/openapi.v1.yaml#/parameters/limit"
