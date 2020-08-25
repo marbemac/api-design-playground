@@ -4,7 +4,7 @@
   "properties": {
     "name": {
       "type": "string",
-      "description": "The user's full name."
+      "description": "The user's full name. Testing."
     },
     "age": {
       "type": "number",
@@ -12,11 +12,6 @@
       "maximum": 150
     }
   },
-  "required": [
-    "name",
-    "age"
-  ],
-  "x-tags": [
-    "Todos"
-  ]
+  "required": ["name", "age"],
+  "x-tags": ["Todos"]
 }
